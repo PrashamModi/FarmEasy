@@ -53,7 +53,7 @@ const Login = () => {
         <Divider />
 
         <form action="" onSubmit={handleSubmit} className="text-white">
-          <div>
+          <div className="wrp">
             <label htmlFor="email">Email:</label>
             <input
               type="text"
@@ -62,10 +62,10 @@ const Login = () => {
               placeholder="Email"
               value={user.email}
               onChange={handleInput}
-              className="m-5"
+              className="m-5 w-90"
             />
           </div>
-          <div>
+          <div className="wrp">
             <label htmlFor="password">Password:</label>
             <input
               type="password"
@@ -77,7 +77,7 @@ const Login = () => {
               className="m-5"
             />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit" className="btn">Login</button>
         </form>
         <div className="mt-5 text-center">
           <span style={{ color: "white" }} className="text-gray-500">

@@ -5,6 +5,7 @@ import Divider from "../../components/Divider";
 import { RegisterUser } from "../../api/users";
 import { useDispatch } from "react-redux";
 import {SetLoader} from "../../redux/loadersSlice"
+import "./register.css"
 
 
 const Register = () => { 
@@ -56,19 +57,19 @@ const Register = () => {
         <Divider />
 
         <form action="" onSubmit={handleSubmit} className="text-white">
-          <div>
+          <div className="wrp">
             <label htmlFor="name">UserName:</label>
             <input type="text" name="name" id="name" placeholder="UserName" value={user.name} onChange={handleInput} className="m-5" required/>
           </div>
-          <div>
+          <div className="wrp">
             <label htmlFor="email">Email:</label>
             <input type="text" name="email" id="email" placeholder="Email" value={user.email} onChange={handleInput} className="m-5"/>
           </div>
-          <div>
+          <div className="wrp">
             <label htmlFor="password">Password:</label>
             <input type="password" name="password" id="password" placeholder="Password" value={user.password} onChange={handleInput} className="m-5"/>
           </div>
-          <button type="submit">Register</button>
+          <button type="submit" className="btn">Register</button>
         </form>
         <div className="mt-5 text-center">
           <span style={{ color: "white" }} className="text-gray-500">

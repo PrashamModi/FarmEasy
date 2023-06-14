@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Tilt+Prism&display=swap");
+
+* {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+body {
+  background-color: #d6e4e5;
+}
+
+input,
+textarea{
+  min-height: 45px;
+  border: 3px solid rgb(149, 147, 147) !important;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+
+}
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+  border-color: #4671EA  !important;
+  box-shadow: none !important;
+}
+
+button {
+  margin-top: 15px;
+  height: 45px !important;
+  border-radius: 10px;
+  width: auto;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+table {
+  border: rgb(144, 143, 143) 1px solid;
+  border-radius: 2px;
+}
+i {
+  font-size: 20px !important;
+}
+
+.max-width{
+  max-width: max-content !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

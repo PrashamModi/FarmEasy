@@ -81,7 +81,7 @@ const Images = ({ selectedProduct, setShowProductForm, getData }) => {
         fileList={file ? [file] : []}
         showUploadList={showPreview}
       >
-        <Button type="dashed">Upload Image</Button>
+        <Button type="dashed" className="w-full">Upload Image</Button>
       </Upload>
       <div className="flex justify-end gap-5 mt-5">
         <Button

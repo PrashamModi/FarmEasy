@@ -142,6 +142,7 @@ const ProductInfo = () => {
                 <Button
                   onClick={() => setShowAddNewBid(!showAddNewBid)}
                   disabled={user._id === product.seller._id}
+                  className="w-40"
                 >
                   New Bid
                 </Button>
